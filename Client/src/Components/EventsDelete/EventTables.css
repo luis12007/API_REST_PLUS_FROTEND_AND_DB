@@ -1,0 +1,39 @@
+.event-table-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .event-table {
+    width: 80%;
+    border-collapse: collapse;
+  }
+  
+  .event-table th,
+  .event-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  .event-table th {
+    background-color: #f8f8f8;
+  }
+  
+  .event-table tbody tr.selected {
+    background-color: rgb(246, 141, 141);
+    color: white;
+  }
+  
+  .event-table img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  @media (max-width: 768px) {
+    .event-table-container {
+      width: 100%;
+    }
+  }
+  

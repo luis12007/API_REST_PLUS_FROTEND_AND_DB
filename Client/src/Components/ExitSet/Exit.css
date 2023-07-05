@@ -1,0 +1,21 @@
+.exit-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.exit-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.exit-button:focus {
+    outline: none;
+}
+
+.exit-button:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,9 @@
+.firstContainer{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 20px;
+}

@@ -1,0 +1,9 @@
+.board{
+    border: 1px solid #3161A3;
+    border-radius: 15px 15px 0px 0px;
+    border-bottom: 0px;
+    width: 95%;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+}

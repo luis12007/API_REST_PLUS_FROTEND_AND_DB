@@ -1,0 +1,44 @@
+.event-created-component {
+  margin: 10px 0px;
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-flow: row nowrap;    
+  justify-content: center;
+  align-items: center;
+}
+
+.create-event-component{
+    background: rgb(205, 205, 205);
+    height: 100%;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgb(157, 157, 157);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start ;
+    align-items: center;
+}
+
+.create-event-component > p{
+    margin: 35px 0px 10px 0px;
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 70%;
+}
+
+.btn-add-event{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    opacity: 80%;
+}
+
+.btn-add-event:hover{
+    height: 42px;
+    width: 42px;
+    opacity: 100%;
+    transition: all 0.2s;
+}

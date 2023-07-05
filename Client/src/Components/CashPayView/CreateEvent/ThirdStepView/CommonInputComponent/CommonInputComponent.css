@@ -1,0 +1,27 @@
+.common-input-component{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items:flex-start;
+    margin: 10px;
+    width: 700px;
+    height: 100px;
+}
+
+.common-input-component > p{
+    margin: 0px;
+}
+
+.common-input-component > h3{
+    margin: 5px 0px 5px 0px;
+}
+
+.common-input-component > input{
+    margin: 10px 0px;
+    height: 40px;
+    width: 90%;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid rgb(173, 173, 173);
+    font-style: italic;
+}

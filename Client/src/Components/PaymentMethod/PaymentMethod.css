@@ -1,0 +1,78 @@
+.paymentMethod{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.titlePaymentMethod{
+    font-size: 1.3rem;
+    margin: 15px 0px 5px 0px;
+}
+
+.line{
+    width: 300px;
+    height: 2px;
+    background-color: #3262A4;
+}
+
+.optionsContainer{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardOption{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardOption > p{
+    font-size: 1.2rem;
+}
+
+.cashOption > p{
+    font-size: 1.2rem;
+}
+
+.cashOption{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconCard{
+    width:100px;
+    height:100px;
+    color: #3262A4;
+    cursor: pointer;
+}
+
+.iconCard:hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+.iconCash{
+    width:100px;
+    height: 100px;
+    color: #13ABC4;
+    cursor: pointer;
+}
+
+.iconCash:hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+}

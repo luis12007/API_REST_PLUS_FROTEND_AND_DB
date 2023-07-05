@@ -1,0 +1,7 @@
+.footer{
+    width: 100%;
+    background-color: #3161a3;
+    display: flex;
+    flex-flow: row nowrap;
+    color: white;
+}

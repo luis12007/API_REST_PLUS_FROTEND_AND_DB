@@ -1,0 +1,15 @@
+.condition-component{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0px 0px 0px 18px;
+}
+
+.condition-component > input {
+    margin: 0px 5px 0px 0px;
+}
+
+.condition-component > p {
+    color: white;
+    margin: 8px 0px;
+    font-size: 0.9rem;
+}

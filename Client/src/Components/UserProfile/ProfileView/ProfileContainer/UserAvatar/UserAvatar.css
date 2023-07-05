@@ -1,0 +1,31 @@
+.user-avatar{
+    align-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.user-avatar > img{
+    object-fit: cover;
+    margin: 40px 0px 0px 0px;
+    border: 1px solid #13ABC4;
+    border-radius: 90px;
+}
+
+.log-out{
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.log-out > img {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    margin: 10px 10px;
+}
+
+.log-out > p {
+    margin: 14px 5px;
+}

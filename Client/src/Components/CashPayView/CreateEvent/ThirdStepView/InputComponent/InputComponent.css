@@ -1,0 +1,47 @@
+.input-component{
+    width: 710px;
+    height:70px;
+    margin: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.input-component > img{
+    object-fit:cover;
+    height: 50px;
+    width: 50px;
+}
+
+.input-component > .description-input{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 7px;
+}
+
+.input-component > .description-input > p{
+    margin: 0px;
+    font-size: 0.9rem;
+    opacity: 70%;
+}
+
+.input-component > .description-input > .title-input{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.input-component > .description-input > .title-input > img{
+    object-fit: cover;
+    height: 30px;
+    width: 30px;
+    margin: 0px 0px 0px 5px;
+}
+
+.input-component > .description-input > .title-input > h3{
+    margin: 0px;
+}

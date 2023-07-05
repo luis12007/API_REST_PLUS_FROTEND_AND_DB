@@ -1,0 +1,34 @@
+.storeHeadComponent{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.siteStore{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.nameStore{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-top: 0px;
+    border-left: 0px;
+}

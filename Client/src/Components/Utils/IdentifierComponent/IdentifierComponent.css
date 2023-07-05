@@ -1,0 +1,13 @@
+.identifier-component{
+    width: 550px;
+    height: 30px;
+    background: linear-gradient(45deg, #3161A3 50%, transparent 50%);
+    color: white;
+    text-align: left;
+    margin: 10px 0px 0px 0px;
+}
+
+.identifier-component > h3{
+    margin: 10px 10px;
+    font-size: large;
+}

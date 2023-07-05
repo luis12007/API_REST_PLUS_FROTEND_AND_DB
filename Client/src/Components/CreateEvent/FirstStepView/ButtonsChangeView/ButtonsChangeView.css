@@ -1,0 +1,52 @@
+.btns-change-views{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 20px 0px;
+}
+
+.btns-change-views > .btns{
+    height: 50%;
+    width: 200px;
+    display: flex;
+}
+
+.btns-change-views > .btns > button{
+    width: 33%;
+    height: 100%;
+    background: white;
+}
+
+.btns-change-views > .btns > .first-view{
+ border: 2px solid #13BAC4;
+ border-radius: 10px 0px 0px 10px;   
+}
+
+.btns-change-views > .btns > .first-view:hover{
+    background: #13BAC4;
+    transition: all 0.2s;
+}
+
+.btns-change-views > .btns > .second-view{
+    border: 2px solid #13BAC4;
+    border-left: none;
+    border-right: none;
+}
+
+.btns-change-views > .btns > .second-view:hover{
+    background: #13BAC4;
+    transition: all 0.2s;
+}
+
+.btns-change-views > .btns > .third-view{
+    border: 2px solid #13BAC4;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.btns-change-views > .btns > .third-view:hover{
+    background: #13BAC4;
+    transition: all 0.2s;
+}

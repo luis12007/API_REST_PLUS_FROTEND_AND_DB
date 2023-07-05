@@ -1,0 +1,12 @@
+.networks{
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-left: 180px;
+}
+
+.networks > p{
+    color: white;
+}

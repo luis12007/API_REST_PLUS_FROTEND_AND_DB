@@ -1,0 +1,62 @@
+.return-btns{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.return-btns > .btn-profile > img{
+    margin: 0px;
+    object-fit: cover;
+    height: 30px;
+    width: 30px;
+    cursor: pointer
+}
+
+.return-btns > .btn-profile > img:hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+.return-btns > .btn-return > img{
+    margin: 0px;
+    object-fit: cover;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.return-btns > .btn-return > img:hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+.btn-profile{
+    width: 70px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.btn-return{
+    width: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.btn-profile > p{
+    margin: 5px 0px 0px 0px;
+    color: black;
+}
+
+.btn-return > p{
+    color: black;
+    margin: 5px 0px 0px 0px;
+}

@@ -1,0 +1,39 @@
+.div-button-profile{
+    width: 20%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border:0px;
+    cursor: pointer;
+}
+
+.rounded-image {
+    border-radius: 50%;
+}
+
+.div-button-profile:hover{
+    border: 5px solid #3161A3;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.button-header-profile{
+    background-color: white;
+    color: black;
+    border: none;
+    width: 20%;
+    height: 10px;
+    font-size: 1.2rem;
+    margin: 0px 15px 0px 0px;
+    margin-right: 40px;
+    cursor: pointer;
+    font-size:0.9rem;
+}
+
+.div-button-profile > img{
+    object-fit: cover;
+    height: 34px;
+    width:34px;
+}

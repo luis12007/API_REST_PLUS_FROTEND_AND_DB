@@ -1,0 +1,14 @@
+.storeComponent{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nameStore > input{
+    margin: 0px 10px;
+    height: 15px;
+    width: 15px;
+}

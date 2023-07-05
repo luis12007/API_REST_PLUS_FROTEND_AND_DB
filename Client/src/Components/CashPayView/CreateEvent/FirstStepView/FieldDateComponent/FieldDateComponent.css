@@ -1,0 +1,63 @@
+.field-date-component{
+    width: 750px;
+    height: 200px;
+    padding: 10px 10px 0px 10px;
+    margin: 10px 0px 0px 0px;
+}
+
+.field-date-component > .description-field-date{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.field-date-component .description-field-date > img{
+    height: 54px;
+    width: 54px;
+    margin: 0px;
+}
+
+.field-date-component > .description-field-date > .description-field{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0px 0px 0px 10px;
+}
+
+.field-date-component > .description-field-date > .description-field > p{
+    margin: 0px;
+    font-size: 0.9rem;
+    color: rgb(164, 164, 164);;
+}
+
+.field-date-component > .description-field-date > .description-field > .title-field-date{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.field-date-component > .description-field-date > .description-field > .title-field-date > img{
+    height: 30px;
+    width: 30px;
+    margin: 0px 0px 0px 5px;
+}
+
+.field-date-component > .description-field-date > .description-field > .title-field-date > h3{
+    margin: 0px;
+}
+
+.field-date-component > .inputs-field-date{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0px 0px 0px;
+}

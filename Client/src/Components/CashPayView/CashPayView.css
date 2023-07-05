@@ -1,0 +1,99 @@
+.cashPayView{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.titleCashPayment{
+    font-size: 1.4rem;
+}
+
+.storeSelection{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: #3262A4;
+    color: white;
+    font-size: 1.2rem;
+    margin: 15px 0px;
+}
+
+.paymentStore{
+    width: 600px;
+    height: 300px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 15px 0px;
+    box-shadow: 2px 3px 5px rgb(193, 193, 193);
+}
+
+.storeList{
+    width: 100%;
+    height: 260px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.storeList::-webkit-scrollbar{
+    display: none;
+}
+
+.amountInput{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: #3262A4;
+    color: white;
+    font-size: 1.2rem;
+    margin: 15px 0px;    
+}
+
+.cashPayView > label{
+    margin: 5px 0px;
+    font-size: 1.1rem;
+}
+
+.cashPayView > input{
+    width: 300px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.cashPayView > .totalPayParraph{
+    font-size: 1.2rem;
+    margin: 5px 0px;
+    border: none;
+}
+
+.buttonPayAmount{
+    width: 100px;
+    height: 40px;
+    background: #3262A4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.buttonPayAmount:hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+

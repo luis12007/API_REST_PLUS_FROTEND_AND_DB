@@ -1,0 +1,87 @@
+.rol-asignacion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.user-name-rol-button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #3161a3;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.asignar-rol {
+    width: 100%;
+    margin: 0 20px;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+.asignar-rol th,
+.asignar-rol td {
+    padding: 10px;
+    border: 1px solid #3161a3;
+}
+
+.asignar-rol th {
+    background-color: #f8f8f8;
+    color: #000000;
+}
+
+.asignar-rol input[type="checkbox"] {
+    display: none;
+}
+
+.asignar-rol label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #3161a3;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.asignar-rol label:before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease;
+}
+
+.asignar-rol input[type="checkbox"]:checked+label:before {
+    background-color: #3161a3;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.accept,
+.cancel {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #3161a3;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+}

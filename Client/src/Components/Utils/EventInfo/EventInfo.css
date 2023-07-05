@@ -1,0 +1,18 @@
+.infoEventText > p, h3 {
+    color: white;
+    padding: 1px 10px 0px 1px;
+    margin: 1px;
+    font-size: 0.8rem;
+    font-weight: bold; /* Aumenta el grosor del texto */
+    text-shadow: 1px 1px 2px black; /* Agrega sombra para mayor contraste */
+    opacity: 100%;
+}
+
+.infoEventText{
+    opacity: 100%;
+}
+
+
+
+
+

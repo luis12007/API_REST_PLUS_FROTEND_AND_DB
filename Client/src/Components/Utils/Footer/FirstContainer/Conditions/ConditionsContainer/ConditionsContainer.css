@@ -1,0 +1,4 @@
+.conditions-container{
+    display: flex;
+    flex-flow: column wrap;
+}

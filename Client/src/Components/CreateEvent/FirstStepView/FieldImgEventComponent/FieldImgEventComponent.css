@@ -1,0 +1,55 @@
+.field-img-component{
+    width: 100%;
+    height: 400px;
+    margin: 20px 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.field-img-component > .field-img-description{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.field-img-component > input{
+    background: rgb(219, 219, 219);
+    height: 75%;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.field-img-component > .field-img-description > .field-img-title{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.field-img-component > .field-img-description > p{
+    margin: 0px;
+}
+
+.fieldImgTitle{
+    font-size: 1.2rem;
+    color: black;
+    margin: 0px;
+}
+
+.field-img-component > .field-img-description > .field-img-title > img{
+    height: 20px;
+    width: 20px;
+    margin: 0px 0px 0px 10px;
+}
+

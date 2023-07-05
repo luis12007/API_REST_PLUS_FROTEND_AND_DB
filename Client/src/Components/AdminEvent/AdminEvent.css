@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 6%;
+  }
+  
+  .column {
+    width: 30%;
+  }
+  
+  .card {
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .card:hover {
+    background-color: #ffffff;
+    border-color: inherit;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .card-action {
+    font-size: 18px;
+  }
+  

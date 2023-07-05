@@ -1,0 +1,77 @@
+.user-tickets{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    margin: 10px 0px 40px 0px;
+}
+
+.user-tickets > .board > .buttons-board > .button-2{
+    background: #3161A3;
+    color: white;
+}
+
+.user-tickets > .searcher {
+    width: 95%;
+    background: white;
+    border: 1px solid #3161A3;
+    border-bottom: 0px;
+    padding: 10px 0px;
+}
+
+.user-tickets > .searcher > .searcher-container{
+    border: 1px solid #3161A3;
+}
+
+.title-tickets{
+    width: 95%;
+    height: 70px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #3161A3;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+.title-tickets > h2 {
+    margin: 7px 0px;
+    color: black;
+} 
+
+.user-tickets > .title-tickets > .title-subline{
+    background: #3161A3;
+    height: 5px;
+    width: 275px;
+}
+
+.user-tickets > .btn-pay{
+    margin: 0px;
+    background: #7EFAFF;
+    border: none;
+    border-radius: 20px;
+    width: 150px;
+    height: 70px;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user-tickets > .btn-pay:hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+.user-tickets > .btn-pay > img{
+    width: 30px;
+    height: 30px;
+    margin: 0px 0px 0px 5px;
+}

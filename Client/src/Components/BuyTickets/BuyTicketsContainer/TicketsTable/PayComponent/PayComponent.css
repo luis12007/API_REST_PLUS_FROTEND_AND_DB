@@ -1,0 +1,121 @@
+.payComponent{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    opacity: 100%;
+}
+
+.selectionSection{
+    width: 40%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    border: 1px solid rgb(173, 173, 173);
+    border-top: 0px;
+    border-left: 0px;
+}
+
+.firstParraph{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+}
+
+.firstParraph > input {
+    margin: 0px 5px;
+    height: 15px;
+    width: 15px;
+}
+
+.firstParraph > p{
+    margin: 0px 5px;
+    font-size: 1.1rem;
+}
+
+.secondParraph{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+}
+
+.secondParraph > img{
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.secondParraph > img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.secondParraph > p{
+    margin: 0px 5px;
+    font-size: 1.1rem;
+}
+
+.typePay{
+    width:15%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(173, 173, 173);
+    border-top: 0px;
+    border-left: 0px;  
+    margin: 0px; 
+}
+
+.priceOfPay{
+    width:15%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(173, 173, 173);
+    border-top: 0px;
+    border-left: 0px; 
+    margin: 0px;
+}
+
+.surchargePay{
+    width:15%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(173, 173, 173);
+    border-top: 0px;
+    border-left: 0px; 
+    margin: 0px;
+}
+
+.totalPay{
+    width:15%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(173, 173, 173);
+    border-top: 0px;
+    border-left: 0px; 
+    border-right: 0px;
+    margin: 0px;
+}

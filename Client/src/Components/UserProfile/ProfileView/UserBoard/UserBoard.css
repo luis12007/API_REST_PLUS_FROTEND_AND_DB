@@ -1,0 +1,55 @@
+.user-board{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.user-board > .board > .buttons-board > .button-1 {
+    background-color: #3161A3;
+    color: white;
+}
+
+.user-board > .searcher{
+    width: 95%;
+    background-color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #3161A3;
+    border-bottom: 0px;
+    padding: 10px 0px;
+    margin: 0px
+}
+
+.user-board > .searcher > .searcher-container{
+    border: 1px solid #3161A3;
+}
+
+.title-tickets{
+    width: 95%;
+    height: 70px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #3161A3;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+.title-tickets > h2 {
+    margin: 7px 0px;
+    color: black;
+} 
+
+.title-subline{
+    background: #3161A3;
+    height: 5px;
+    width: 275px;
+}

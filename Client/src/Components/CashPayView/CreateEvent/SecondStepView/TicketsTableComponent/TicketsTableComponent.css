@@ -1,0 +1,87 @@
+.tickets-table-component{
+    width: 97%;
+    height: 500px;
+    margin: 10px 0px 0px 20px;
+}
+
+.tickets-table-component > .table-header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    color: white;
+}
+
+.tickets-table-component > .table-header > .title-ticket-table{
+    width: 70%;
+    height: 100%;
+    background-color: #13BAC4;
+    border-radius:  40px 0px 0px 0px;
+    border: 2px solid rgb(125, 125, 125);
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.tickets-table-component > .table-header > .title-ticket-table > h3{
+    margin: 0px 0px 0px 20px;
+}
+
+.tickets-table-component > .table-header > .price-ticket-table{
+    width: 30%;
+    height: 100%;
+    background-color: #13BAC4;
+    border-radius: 0px 40px 0px 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tickets-table-component > .table-header > .price-ticket-table > img{
+    object-fit: cover;
+    height: 30px;
+    width: 30px;
+    margin: 0px 20px 0px 0px;
+}
+
+.tickets-table-component > .table-content{
+    width: 100%;
+    height: 80%;
+    border: 1px solid #13BAC4;
+    border-top: none;
+    border-radius: 0px 0px 40px 40px;
+    margin: 0px 0px 0px 0px;
+    color: white;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.tickets-table-component > .table-content::-webkit-scrollbar{
+    display: none;
+}
+
+.tickets-table-component > .table-header > .title-ticket-table > img{
+    object-fit: cover;
+    height: 30px;
+    width: 30px;
+    margin: 0px 20px 0px 0px;
+}
+
+.tickets-table-component > .table-header > .title-ticket-table > img:hover{
+    cursor: pointer;
+}
+
+.tickets-table-component > .table-header > .price-ticket-table > img:hover{
+    cursor: pointer;
+}
+
+.tickets-table-component > .table-header > .price-ticket-table > h3{
+    margin: 0px 0px 0px 20px;
+}

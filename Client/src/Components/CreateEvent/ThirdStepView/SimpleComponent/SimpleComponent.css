@@ -1,0 +1,22 @@
+.simple-component{
+    width: 600px;
+    height: 70px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items:flex-start;
+    margin: 10px 0px 10px 10px;
+}
+
+.simple-component > h3{
+    margin: 0px;
+}
+
+.simple-component > input{
+    height: 40px;
+    padding: 10px;
+    width: 90%;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid rgb(161, 161, 161);
+}

@@ -1,0 +1,63 @@
+.ticket-class-component{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 5px 0px;
+    border: 1px solid rgb(168, 168, 168);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.ticket-class-component > .ticket-type{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ticket-class-component > .ticket-type > p{
+    margin: 0px 0px 0px 20px;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+.ticket-class-component > .ticket-type > .ticket-btns > img{
+    object-fit: cover;
+    height: 30px;
+    width: 30px;
+    margin: 0px 10px 0px 0px;
+}
+
+.ticket-class-component > .ticket-type > .ticket-btns > .edit-ticket:hover{
+    height: 32px;
+    width: 32px;
+    transition: all 0.2s;
+}
+
+.ticket-class-component > .ticket-type > .ticket-btns > .delete-ticket:hover{
+    height: 32px;
+    width: 32px;
+    transition: all 0.2s;
+}
+
+.ticket-class-component > .ticket-price{
+    width: 30%;
+    height: 100%;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket-class-component > .ticket-price > p{
+    margin: 0px;
+}

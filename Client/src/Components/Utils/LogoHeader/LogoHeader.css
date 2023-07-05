@@ -1,0 +1,18 @@
+.logo-header{
+    position:relative; 
+}
+
+.section-one{
+    background: #4b93f7;
+    height:12px;
+}
+
+.section-two{
+    background: #3e79cc;
+    height:18px;
+}
+
+.section-three{
+    background:#3161A3;
+    height: 28px;
+}

@@ -1,0 +1,29 @@
+.localitie-component{
+    width: 250px;
+    margin: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.localitie-component > p{
+    opacity: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.name{
+    width: 50%;
+    height: 100%;
+    border: 1px solid rgb(173, 173, 173);
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+}
+
+.value{
+    width: 50%;
+    height: 100%;
+}

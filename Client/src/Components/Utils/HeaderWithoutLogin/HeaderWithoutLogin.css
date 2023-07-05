@@ -1,0 +1,18 @@
+.header-without-login {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.header-without-login > .div-button-profile {
+    width: 16%;
+}
+
+.header-without-login > .div-button-signup {
+    width: 16%;
+}
+
+.header-without-login > .div-button-header {
+    width: 16%;
+}

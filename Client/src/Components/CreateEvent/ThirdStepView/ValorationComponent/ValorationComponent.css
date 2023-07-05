@@ -1,0 +1,29 @@
+.valoration-component{
+    margin:10px;
+    width: 600px;
+    height: 150px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.valoration-component > h3{
+    margin: 5px 0px;
+}
+
+.valoration-component > p{
+    margin: 0px;
+    font-size: 0.9rem;
+    opacity: 70%;
+}
+
+.valoration-component > .images{
+    width: 70%;
+    height: 60%;
+    padding: 10px 0px;
+}
+
+.valoration-component > .images > img{
+    margin: 0px 10px;
+}

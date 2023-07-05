@@ -1,0 +1,43 @@
+.form-sign-up{
+    background: white;
+    border: 1px solid #13ABC4;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 450px;
+    margin: 20px 50px;
+    box-shadow: 2px 3px 8px rgb(97, 97, 97);
+}
+
+.form-sign-up > a{
+    font-size: 0.7rem;
+}
+
+.form-sign-up > img{
+    height: 75px;
+    width: 75px;
+}
+
+.access{
+    border: 0px;
+    margin: 30px 0px 30px 0px ;
+    height: 40px;
+    width: 150px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #7EFAFF; 
+}
+
+.access:hover{
+    transform: scale(1.1);
+    transition: all 0.1s;
+}
+
+.href-SingUp{
+    margin-bottom: 30px;
+}

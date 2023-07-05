@@ -1,0 +1,13 @@
+.networkComponent{
+    margin: 0px 10px;
+}
+
+.networkComponent > img:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
+    
+}
+.redes-icons{
+    width: 30px;
+    height: 30px;
+}

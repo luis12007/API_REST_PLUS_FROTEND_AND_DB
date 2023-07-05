@@ -1,0 +1,73 @@
+.field-event-description{
+    width: 750px;
+    height: 325px;
+    margin: 0px;
+}
+
+.field-description{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.field-event-description > .field-description > .complete-description-field{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 20%;
+}
+
+.field-description > .complete-description-field > img{
+    margin: 0px 0px 0px 10px;
+    height: 34px;
+    width: 34px;
+}
+
+.field-event-description > .field-description > .complete-description-field > .note-and-title-field{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0px 0px 0px 10px;
+}
+
+.field-event-description > .field-description > .complete-description-field > .note-and-title-field > p{
+   margin: 0px;
+}
+
+.field-event-description > .field-description > .complete-description-field > .note-and-title-field > .title-field{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.field-event-description > .field-description > .complete-description-field > .note-and-title-field > .title-field > img{
+    height: 20px;
+    width: 20px;
+    margin: 0px 0px 0px 5px;
+}
+
+.titleFieldDescription{
+    font-size: 1.2rem;
+    color: black;
+    margin: 0px;
+}
+
+.field-description > input{
+    width: 90%;
+    height: 60%;
+    grid-area: input;
+    border-radius: 5px;
+    border: 1px solid rgb(182, 182, 182);
+    padding: 0px 0px 0px 10px;
+    font-size: 15px;
+    font-style: italic;
+    margin: 5px 0px 0px 10px;
+}

@@ -1,0 +1,35 @@
+.tickets-ya-container-button{
+    background-color: white;
+    border: 3px solid #3161a3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 55px;
+    width: 250px;
+    height: 70px;
+}
+
+.tickets-ya-logo {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    background: transparent;
+    
+}
+
+.tickets-ya-logo > h2{
+    margin: 0px 5px;
+}
+
+.tickets-ya-title{
+    font-size: 2rem;
+    color: black;
+}
+.ticket-logo{
+    width: 45px;
+    height: 45px;
+    margin: 0px 10px;
+}

@@ -1,0 +1,56 @@
+.localities-info-component{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.localities-info-component > h2{
+    color:black;
+    font-size: 1.2rem; 
+    margin: 0px;
+    padding: 0px;   
+}
+
+.line{
+    width: 120px;
+    height: 3px;
+    background: #13BAC4;
+    margin: 5px 0px 10px 0px;
+}
+
+.note{
+    margin: 15px 0px;
+    font-size: 0.7rem;
+}
+
+.btn-buy{
+    width: 70px;
+    height: 40px;
+    border: 1px solid #13BAC4;
+    border-radius: 5px;
+    color: #13BAC4;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.btn-buy > .ticket-icon{
+    margin: 0px 0px 0px 5px;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+
+.btn-buy:hover{
+    transform: scale(1.1);
+    background: #13BAC4;
+    color: white;
+    transition: all 0.2s;
+}

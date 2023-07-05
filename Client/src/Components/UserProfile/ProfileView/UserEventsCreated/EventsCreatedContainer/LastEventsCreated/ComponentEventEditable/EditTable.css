@@ -1,0 +1,41 @@
+.event-component-with-btns{
+    position: relative;
+    margin: 20px 0px;
+}
+
+.event-component-with-btns > .event-component{
+    margin: 0px 30px;
+    width: 400px;
+}
+
+.event-component-with-btns > button > img{
+    height: 40px;
+    width: 40px;
+}
+
+.event-component-with-btns > button{
+    background: transparent;
+    border: none;
+}
+
+.event-component-with-btns > button > .edit-btn{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+.event-component-with-btns > button > .delete-btn{
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
+
+.event-component-with-btns >  button > img{
+    cursor: pointer;
+}
+
+.event-component-with-btns > button > img:hover{
+    height: 45px;
+    width: 45px;
+    transition: all 0.2s ease-in-out;
+}

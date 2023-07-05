@@ -1,0 +1,120 @@
+.first-step-create-event{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.first-step-div{
+    width: 95%;
+    height: 250vh;
+    border-radius: 25px;
+    border: 1px solid #13BAC4;
+    margin: 50px 0px;
+}
+
+.title-first-step{
+    width: 100;
+    height: 100px;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #13BAC4;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.title-first-step > img{
+    width: 70px;
+    height: 70%;
+    object-fit: cover;
+    margin: 0px 10px 0px 0px;
+}
+
+.user-identifier{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.user-identifier > img{
+    width: 70px;
+    height: 70%;
+    object-fit: cover;
+}
+
+.user-identifier > p{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 0px 0px 10px;
+}
+
+.first-step-div > .info-sign{
+    margin: 10px 0px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-step-div > .info-sign > img{
+    height: 50px;
+    width: 50px;
+    margin: 0px 10px 0px 0px;
+}
+
+.first-step-div > .info-sign > p{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.first-step-div > .div-actions-btns > .actions-btns{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.div-actions-btns{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.actions-btns{
+    align-self: center;
+}
+
+.first-step-div > .div-actions-btns > .actions-btns > button{
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: #3161A3;
+    color: white;
+    font-weight: bolder;
+    font-style: italic;
+    align-content: center;
+}
+
+.first-step-div > .div-actions-btns > .actions-btns > button:hover{
+    width: 32%;
+    background: white;
+    color: #3161A3;
+    border: 1px solid #3161A3;
+    transition: all 0.2s;
+}

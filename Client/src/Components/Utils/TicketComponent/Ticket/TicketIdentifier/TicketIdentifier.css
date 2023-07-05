@@ -1,0 +1,25 @@
+.ticket-identifier{
+    grid-area: identifier;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 2px solid white;
+    border-radius: 25px 0px 0px 0px;
+    margin: 0px;
+    padding: 0px;
+    color:white;
+    height: 100%;
+}
+
+.ticket-identifier > h3{
+    margin: 10px 10px 3px 15px;
+    padding: 0px;
+    font-size: 0.9rem;
+}
+
+.ticket-identifier > p{
+    padding: 0px;
+    margin: 0px 15px 6px 25px;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,52 @@
+.button-google{
+    height: 60px;
+    width: 195px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 15px;
+    margin: 20px 0px;
+    cursor: pointer;
+    background: white;
+}
+
+.button-google:hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+.button-google > img {
+    height: 30px;
+    width: 30px;
+}
+
+.button-google > p {
+    font-size: 0.9rem;
+    margin: 0px 0px 0px 8px;
+    font-weight: bold;
+}
+
+.div-state-auth{
+    height: 60px;
+    width: 195px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 15px;
+    margin: 20px 0px
+}
+
+.div-state-auth > img {
+    height: 30px;
+    width: 30px;    
+}
+
+.div-state-auth > p {
+    font-size: 0.9rem;
+    margin: 0px 0px 0px 8px;
+    font-weight: bold;
+}

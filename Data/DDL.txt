@@ -1,0 +1,246 @@
+-- DROP SCHEMA public;
+
+CREATE SCHEMA public AUTHORIZATION pg_database_owner;
+
+COMMENT ON SCHEMA public IS 'standard public schema';
+-- public.categoria_evento definition
+
+-- Drop table
+
+-- DROP TABLE public.categoria_evento;
+
+CREATE TABLE public.categoria_evento (
+	id_categoria uuid NOT NULL DEFAULT gen_random_uuid(),
+	nombre varchar NOT NULL,
+	CONSTRAINT categoria_evento_pk PRIMARY KEY (id_categoria)
+);
+
+
+-- public.categoria_ticket definition
+
+-- Drop table
+
+-- DROP TABLE public.categoria_ticket;
+
+CREATE TABLE public.categoria_ticket (
+	id_categoria uuid NOT NULL DEFAULT gen_random_uuid(),
+	precio float8 NOT NULL,
+	capacidad_maxima int4 NOT NULL,
+	CONSTRAINT categoria_ticket_pk PRIMARY KEY (id_categoria)
+);
+
+
+-- public.colaborador definition
+
+-- Drop table
+
+-- DROP TABLE public.colaborador;
+
+CREATE TABLE public.colaborador (
+	id_colaborador uuid NOT NULL DEFAULT gen_random_uuid(),
+	nombre varchar NOT NULL,
+	CONSTRAINT colaborador_pk PRIMARY KEY (id_colaborador)
+);
+
+
+-- public.dataticket definition
+
+-- Drop table
+
+-- DROP TABLE public.dataticket;
+
+CREATE TABLE public.dataticket (
+
+);
+
+
+-- public.roles definition
+
+-- Drop table
+
+-- DROP TABLE public.roles;
+
+CREATE TABLE public.roles (
+	id_rol uuid NOT NULL DEFAULT gen_random_uuid(),
+	nombre varchar NOT NULL,
+	CONSTRAINT roles_pk PRIMARY KEY (id_rol)
+);
+
+
+-- public.usuario definition
+
+-- Drop table
+
+-- DROP TABLE public.usuario;
+
+CREATE TABLE public.usuario (
+	id_usuario uuid NOT NULL DEFAULT gen_random_uuid(),
+	autenticacion bool NOT NULL,
+	username varchar NOT NULL,
+	"password" varchar NULL,
+	correo varchar NOT NULL,
+	estado_activo bool NOT NULL DEFAULT true,
+	CONSTRAINT usuario_pk PRIMARY KEY (id_usuario)
+);
+
+
+-- public.asignacion definition
+
+-- Drop table
+
+-- DROP TABLE public.asignacion;
+
+CREATE TABLE public.asignacion (
+	id_asignacion uuid NOT NULL DEFAULT gen_random_uuid(),
+	id_rol uuid NOT NULL,
+	id_usuario uuid NOT NULL,
+	CONSTRAINT asignacion_pk PRIMARY KEY (id_asignacion),
+	CONSTRAINT asignacion_rol_fk FOREIGN KEY (id_rol) REFERENCES public.roles(id_rol),
+	CONSTRAINT asignacion_usuario_fk FOREIGN KEY (id_usuario) REFERENCES public.usuario(id_usuario)
+);
+
+
+-- public.evento definition
+
+-- Drop table
+
+-- DROP TABLE public.evento;
+
+CREATE TABLE public.evento (
+	id_evento uuid NOT NULL DEFAULT gen_random_uuid(),
+	titulo varchar NOT NULL,
+	fecha date NOT NULL,
+	hora time NOT NULL,
+	id_categoria uuid NOT NULL,
+	id_colaborador uuid NOT NULL,
+	imagen varchar NOT NULL,
+	duracion varchar NOT NULL,
+	boton_panico bool NOT NULL,
+	estado_venta bool NOT NULL,
+	CONSTRAINT evento_pk PRIMARY KEY (id_evento),
+	CONSTRAINT evento_colaborador_fk FOREIGN KEY (id_colaborador) REFERENCES public.colaborador(id_colaborador),
+	CONSTRAINT evento_fk FOREIGN KEY (id_categoria) REFERENCES public.categoria_evento(id_categoria)
+);
+
+
+-- public.localidad definition
+
+-- Drop table
+
+-- DROP TABLE public.localidad;
+
+CREATE TABLE public.localidad (
+	id_localidad uuid NOT NULL DEFAULT gen_random_uuid(),
+	rating varchar NOT NULL,
+	nombre varchar NOT NULL,
+	id_evento uuid NOT NULL,
+	CONSTRAINT localidad_pk PRIMARY KEY (id_localidad),
+	CONSTRAINT localidad_fk FOREIGN KEY (id_evento) REFERENCES public.evento(id_evento)
+);
+
+
+-- public.movimientos definition
+
+-- Drop table
+
+-- DROP TABLE public.movimientos;
+
+CREATE TABLE public.movimientos (
+	id_movimiento uuid NOT NULL DEFAULT gen_random_uuid(),
+	id_usuario uuid NOT NULL,
+	movimiento varchar NOT NULL,
+	descripcion varchar NULL,
+	CONSTRAINT movimientos_pk PRIMARY KEY (id_movimiento),
+	CONSTRAINT movimientos_fk FOREIGN KEY (id_usuario) REFERENCES public.usuario(id_usuario)
+);
+
+
+-- public.patrocinador definition
+
+-- Drop table
+
+-- DROP TABLE public.patrocinador;
+
+CREATE TABLE public.patrocinador (
+	id_patrocinador uuid NOT NULL DEFAULT gen_random_uuid(),
+	nombre varchar NOT NULL,
+	id_evento uuid NOT NULL,
+	CONSTRAINT patrocinador_pk PRIMARY KEY (id_patrocinador),
+	CONSTRAINT patrocinador_fk FOREIGN KEY (id_evento) REFERENCES public.evento(id_evento)
+);
+
+
+-- public.qr definition
+
+-- Drop table
+
+-- DROP TABLE public.qr;
+
+CREATE TABLE public.qr (
+	id_qr uuid NOT NULL DEFAULT gen_random_uuid(),
+	tiempo_validacion timestamp NOT NULL,
+	codigo_hash varchar NOT NULL,
+	id_usuario uuid NOT NULL,
+	CONSTRAINT qr_pk PRIMARY KEY (id_qr),
+	CONSTRAINT qr_fk FOREIGN KEY (id_usuario) REFERENCES public.usuario(id_usuario)
+);
+
+
+-- public.ticket definition
+
+-- Drop table
+
+-- DROP TABLE public.ticket;
+
+CREATE TABLE public.ticket (
+	id_ticket uuid NOT NULL DEFAULT gen_random_uuid(),
+	tier varchar NOT NULL,
+	id_usuario uuid NOT NULL,
+	id_dueño uuid NOT NULL,
+	activo bool NOT NULL,
+	id_evento uuid NOT NULL,
+	id_qr uuid NULL,
+	id_categoria uuid NOT NULL,
+	CONSTRAINT ticket_pk PRIMARY KEY (id_ticket),
+	CONSTRAINT ticket_evento_fk FOREIGN KEY (id_evento) REFERENCES public.evento(id_evento),
+	CONSTRAINT ticket_fk FOREIGN KEY (id_categoria) REFERENCES public.categoria_ticket(id_categoria),
+	CONSTRAINT ticket_qr_fk FOREIGN KEY (id_qr) REFERENCES public.qr(id_qr),
+	CONSTRAINT ticket_usuario_fk FOREIGN KEY (id_usuario) REFERENCES public.usuario(id_usuario)
+);
+
+
+-- public."token" definition
+
+-- Drop table
+
+-- DROP TABLE public."token";
+
+CREATE TABLE public."token" (
+	code uuid NOT NULL DEFAULT gen_random_uuid(),
+	"content" varchar NOT NULL,
+	"timestamp" timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+	active bool NOT NULL DEFAULT true,
+	user_code uuid NULL,
+	CONSTRAINT token_pk PRIMARY KEY (code),
+	CONSTRAINT token_fk FOREIGN KEY (user_code) REFERENCES public.usuario(id_usuario)
+);
+
+
+-- public.administracion definition
+
+-- Drop table
+
+-- DROP TABLE public.administracion;
+
+CREATE TABLE public.administracion (
+	id_asistencia uuid NOT NULL DEFAULT gen_random_uuid(),
+	id_evento uuid NOT NULL,
+	id_cliente uuid NOT NULL,
+	fecha timestamp NOT NULL,
+	grupo varchar NOT NULL,
+	asistencia bool NULL,
+	CONSTRAINT adminisracion_pk PRIMARY KEY (id_asistencia),
+	CONSTRAINT adminisracion_cliente_fk FOREIGN KEY (id_cliente) REFERENCES public.usuario(id_usuario),
+	CONSTRAINT adminisracion_evento_fk FOREIGN KEY (id_evento) REFERENCES public.evento(id_evento)
+);
+

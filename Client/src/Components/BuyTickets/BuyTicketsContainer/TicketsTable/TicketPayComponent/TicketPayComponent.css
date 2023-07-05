@@ -1,0 +1,56 @@
+.ticketPayComponent{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticketPayComponent > p{
+    margin: 12px 0px;
+}
+
+.descriptionTicketToPay{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(173, 173, 173);
+    border-top: 0px;
+    border-left: 0px;
+}
+
+.descriptionTicketToPay > img{
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px 0px 5px;
+    cursor: pointer;
+}
+
+.descriptionTicketToPay > img:hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+.valuesOfTicket{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+}
+
+.valuesOfTicket > p{
+    margin: 0px 5px;
+    font-size: 0.8rem;
+}
+
+.valuesOfTicket > input{
+    margin: 0px 5px;
+    height: 15px;
+    width: 15px;
+}
+

@@ -1,0 +1,58 @@
+.user-list-table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .user-table {
+    width: 90%;
+    border-collapse: separate;
+    background-color: transparent;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-spacing: 0;
+  }
+  
+  .user-table caption {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f1f1f1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .user-table th {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .edit-button {
+    width: 70px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgba(234, 201, 87, 0.8);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .edit-button:hover {
+    background-color: #ccc;
+  }
+  
+  .edit {
+    width: 20px;
+    height: 20px;
+  }
+  
+
+  

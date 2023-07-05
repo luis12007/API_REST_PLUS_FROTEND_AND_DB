@@ -1,0 +1,32 @@
+.div-button-signup{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border:0px;
+}
+
+.div-button-signup:hover{
+    border: 5px solid #3161a3;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.button-header-signup{
+    background-color: white;
+    color: black;
+    border: none;
+    width: auto;
+    height: 50px;
+    width: 60%;
+    font-size: 0.9rem;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.div-button-signup > img{
+    object-fit: cover;
+    height: 34px;
+    width: 34px;
+}

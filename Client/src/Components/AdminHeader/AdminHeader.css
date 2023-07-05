@@ -1,0 +1,12 @@
+.header {
+    margin: 5px 0px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.compo {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 33.33%;
+}

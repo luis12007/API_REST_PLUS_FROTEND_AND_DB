@@ -1,0 +1,36 @@
+.none-events-created-component{
+    width: 100%;
+    height: 91%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.none-events-created-component > .modal-none-events{
+    border-radius: 0px 0px 19px 19px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.none-events-created-component > .modal-none-events > img, p{
+    opacity: 50%;
+}
+
+.none-events-created-component > .modal-none-events > img{
+    height: 60px;
+    width: 60px;
+}
+
+.none-events-created-component > .modal-none-events {
+    background: rgb(228, 228, 228);
+    height: 100%;
+    width: 100%;
+}
+
+.none-events-created-component > .modal-none-events > p{
+    font-size: 1.2rem;
+}

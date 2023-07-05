@@ -1,0 +1,21 @@
+
+.pages{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items:center;
+    margin-left: 50%;
+}
+
+.back{
+    padding-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.next{
+    padding-left: 5px;
+    width: 20px;
+    height: 20px;
+}

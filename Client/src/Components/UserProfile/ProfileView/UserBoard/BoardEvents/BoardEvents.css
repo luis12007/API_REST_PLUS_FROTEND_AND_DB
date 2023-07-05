@@ -1,0 +1,32 @@
+.board-events{
+    width: 95%;
+    height: 80%;
+    position: sticky;
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+    border: 1px solid #3161A3;
+    border-top: 0px;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.board-events::-webkit-scrollbar{
+    display: none;
+}
+
+.board-events > .event-component{
+    width: 300px;
+    height: 300px;
+}
+
+.board-events > .event-component:hover{
+    width: 310px;
+    height: 310px;
+    transition: all 0.5s;
+}
+

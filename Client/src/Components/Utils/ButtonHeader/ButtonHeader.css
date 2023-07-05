@@ -1,0 +1,18 @@
+.button-header{
+    background-color: white;
+    color: black;
+    width: 20%;
+    height: 70px;
+    font-size: 0.9rem;
+    border: 0px;
+    cursor: pointer;
+}
+
+.button-header:hover{
+    border: 0px solid#3161A3;
+    border-top-width: 5px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    transition: all 0.2s;
+}

@@ -1,0 +1,33 @@
+.events-created{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    margin: 10px 0px 10px 0px;
+}
+
+.events-created > .board{
+    height: 60px;
+}
+
+.events-created > .searcher {
+    width: 95%;
+    background: white;
+    border: 1px solid #13ABC4;
+    border-bottom: 0px;
+    height: 80px ;
+}
+
+.events-created > .searcher > .searcher-container{
+    border: 1px solid #13ABC4;
+}
+
+.events-created > .board > .buttons-board > .button-3{
+    background: #13ABC4;
+}
+
+.events-created > .board > .buttons-board > .button-2{
+    background: white;
+}
